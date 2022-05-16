@@ -1,0 +1,78 @@
+@use '../../style/variable' as variable
+
+.navbar
+    width: 300px
+    height: 100%
+    position: fixed
+    font-weight: 700
+    background-color: variable.$bg-black
+    color: #fff
+    border-right: 1px dashed variable.$white
+    font-family: 'Quicksand', sans-serif
+    .webTitle
+        margin: 80px 0
+        line-height: 1.8
+        font-size: 18px
+        letter-spacing: 1px
+        color: variable.$blue
+    .linkList
+        padding: 20px 60px
+        .link
+            margin-bottom: 15px
+            text-align: left
+            color: variable.$orange
+            .title
+                cursor: pointer
+                position: relative
+                &::before, &::after
+                    content: ''
+                    width: 10px
+                    height: 3px
+                    border-radius: 5px
+                    background-color: #555
+                    position: absolute
+                    right: 0
+                    top: 10px
+                    transform: rotate(45deg)
+                    transition: .3s all
+                &::after
+                    transform: rotate(-45deg)
+                    right: -6px
+                &:hover
+                    &::before, &::after
+                        background-color: variable.$orange
+            .activeTitleShow
+                &::before
+                    transform: rotate(-45deg)
+                    background-color: variable.$orange
+                &::after
+                    transform: rotate(45deg)
+                    background-color: variable.$orange
+            .subNav
+                padding: 0 15px
+                overflow: hidden
+                max-height: 0
+                transition: .4s all
+                line-height: 2
+                p
+                    margin: 3px 0
+                .subTitle
+                    cursor: pointer
+                    color: #fff
+                    transition: .3s all
+                    &:hover
+                        color: variable.$green
+                .clickSubTitle
+                    position: relative
+                    color: variable.$green
+                    &::before
+                        content: ''
+                        width: 5px 
+                        height: 20px
+                        background-color: variable.$green
+                        position: absolute
+                        left: -12px
+                        top: calc((100% - 20px) / 2)
+            .activeShow
+                max-height: 220px
+                padding: 7px 15px
