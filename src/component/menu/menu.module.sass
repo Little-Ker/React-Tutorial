@@ -1,0 +1,57 @@
+@use '../../style/variable' as variable
+    
+.menu
+    display: flex
+    justify-content: space-between
+    margin-top: 100px
+    padding-top: 50px
+    border-top: 1px solid #777
+    font-weight: 700
+    .btn
+        cursor: pointer
+        padding: 10px 10px
+        .arrow
+            position: relative
+            margin-left: 30px
+            color: variable.$green
+            &::after, &::before
+                content: ''
+                margin-left: -30px
+                width: 12px
+                height: 3px
+                border-radius: 5px
+                background-color: variable.$green
+                position: absolute
+                left: 0
+                top: 10px
+                transform: rotate(-45deg)
+                transition: .3s all
+            &::after
+                transform: rotate(45deg)
+                top: 17px
+        .txt
+            margin: 0 30px
+            color: variable.$white
+            transition: .3s all
+        &:hover 
+            .arrow
+                &::after, &::before
+                    margin-left: -40px
+            .txt
+                color: variable.$green
+    .rightBtn
+        text-align: right
+        .arrow
+            margin-right: 30px
+            &::after, &::before
+                margin-right: -30px
+                right: 0
+                left: auto
+                transform: rotate(45deg)
+            &::after
+                transform: rotate(-45deg)
+        &:hover .arrow
+            &::after, &::before
+                margin-right: -40px
+.btnHide
+    visibility: hidden
