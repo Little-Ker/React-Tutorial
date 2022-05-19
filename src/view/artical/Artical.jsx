@@ -1,3 +1,4 @@
+import React from "react"
 import styles from './artical.module.sass'
 
 import Title from '../../component/title/Title'
@@ -11,18 +12,18 @@ import Menu from '../../component/menu/Menu'
 import Img from '../../component/img/Img'
 import Block from '../../component/block/Block'
 import Npm from '../../component/npm/Npm'
+import Divider from '../../component/divider/Divider'
+import CodeResult from '../../component/codeResult/CodeResult'
 
 function Artical() {
     const txt = "內文 p : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nam ex adipisci aliquam vitae quaerat perspiciatis porro distinctio exercitationem ipsa, necessitatibus sunt saepe? Officia, optio necessitatibus. Exercitationem nemo officia quod?"
-    const tipsTxt = "提示框 Tips : SubTitle - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nam ex adipisci aliquam vitae Officia, optio necessitatibus."
+    const tipsTxt = ["提示框 Tips : SubTitle - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nam ex adipisci aliquam vitae Officia, optio necessitatibus."]
     const menuList = {
         prev: {
-            title: '',
-            link: ''
+            title: '', to: ''
         },
         next: {
-            title: 'sass',
-            link: ''
+            title: 'sass', to: '/sass'
         }
     }
     const npmTxt = 'npm i react-embed-gist'
@@ -44,6 +45,8 @@ function Artical() {
 
             <Code codeUrl="87a57b357c9cab70e511dfaaca99477c"/>
 
+            <CodeResult />
+
             <Block />
             <SubTitle txt="子標題 SubTitle" />
             <DotItem txt="DotItem 111" />
@@ -51,6 +54,8 @@ function Artical() {
             <DotItem txt="DotItem 333" />
 
             <Img imgUrl="https://picsum.photos/700/300" />
+
+            <Divider />
 
             <Npm npmTxt={npmTxt} />
             <Npm npmTxt={npmTxt} />
