@@ -1,4 +1,6 @@
 import ReactEmbedGist from 'react-embed-gist'
+import React from "react"
+import PropTypes from 'prop-types'
 import styles from './code.module.sass'
 
 function Code(props) {
@@ -9,6 +11,10 @@ function Code(props) {
             />
         </div>
     )
+}
+
+Code.propTypes = {
+    codeUrl: PropTypes.string.isRequired,
 }
 
 export default Code

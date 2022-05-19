@@ -1,14 +1,15 @@
 import React, { useState } from "react"
 import styles from './npm.module.sass'
+import PropTypes from 'prop-types'
 
 function Npm(props) {
     const [isCopy, setIsCopy] = useState(false)
-    const myClick = document.getElementById('root');
-    myClick.addEventListener('mousedown', e => {
+    const myClick = document.getElementById('root')
+    myClick.addEventListener('mousedown', () => {
         setIsCopy(false)
     })
 
-    function copyCode() {
+    const copyCode = () => {
         navigator.clipboard.writeText(props.npmTxt)
         .then(() => setIsCopy(true))
     }
@@ -20,6 +21,10 @@ function Npm(props) {
             {showCopyTxt}
         </div>
     )
+}
+
+Npm.propTypes = {
+    npmTxt: PropTypes.string.isRequired
 }
 
 export default Npm

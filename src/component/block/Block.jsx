@@ -1,3 +1,4 @@
+import React from "react"
 import styles from './block.module.sass'
 
 function Block() {
