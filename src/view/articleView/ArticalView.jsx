@@ -9,6 +9,7 @@ import Sass from '../basicKit/Sass'
 import Eslint from '../basicKit/Eslint'
 import Clsx from '../basicKit/Clsx'
 import Prop from '../component/Prop'
+import PropTypes from '../component/PropTypes'
 
 const RouterPage = () => {
   return (
@@ -19,6 +20,7 @@ const RouterPage = () => {
       <Route exact path="/eslint" element={<Eslint/>} />
       <Route exact path="/clsx" element={<Clsx/>} />
       <Route exact path="/prop" element={<Prop/>} />
+      <Route exact path="/prop-types" element={<PropTypes/>} />
       <Route path="*" element={<Artical/>} />
     </Routes>
   )
