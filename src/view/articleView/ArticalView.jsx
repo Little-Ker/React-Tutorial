@@ -4,11 +4,13 @@ import styles from './articalView.module.sass'
 
 import Navbar from '../../component/navbar/Navbar'
 import Artical from '../artical/Artical'
+import Install from '../CRA/Install'
 
 const RouterPage = () => {
   return (
     <Routes>
       <Route exact path="/" element={<Artical/>} />
+      <Route exact path="/install" element={<Install/>} />
       <Route path="*" element={<Artical/>} />
     </Routes>
   )
