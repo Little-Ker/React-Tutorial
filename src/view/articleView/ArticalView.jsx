@@ -14,6 +14,7 @@ import Hook from '../hooks/Hook'
 import UseState from '../hooks/UseState'
 import UseEffect from '../hooks/UseEffect'
 import UseCallback from '../hooks/UseCallback'
+import UseRef from '../hooks/UseRef'
 
 const RouterPage = () => {
   return (
@@ -29,6 +30,7 @@ const RouterPage = () => {
       <Route exact path="/useState" element={<UseState/>} />
       <Route exact path="/useEffect" element={<UseEffect/>} />
       <Route exact path="/useCallback" element={<UseCallback/>} />
+      <Route exact path="/useRef" element={<UseRef/>} />
       <Route path="*" element={<Artical/>} />
     </Routes>
   )

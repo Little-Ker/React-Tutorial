@@ -1,0 +1,28 @@
+@use '../../style/variable' as variable
+    
+.useRefEx
+    flex-direction: column
+    +variable.set-flex(center, center)
+    .inputList
+        margin: 40px 0 20px 0
+        +variable.set-flex(center, center)
+        input
+            width: 120px
+            padding: 3px 10px
+            &:first-child
+                margin: 0 15px 0 0
+    .chooseList
+        +variable.set-flex(center, center)
+        margin-bottom: 20px
+        select
+            padding: 3px 10px
+    .btn
+        cursor: pointer
+        padding: 7px 0
+        text-align: center
+        width: 100%
+        border: 1px solid variable.$white
+        transition: .3s all
+        &:hover
+            background-color: variable.$white
+            color: variable.$bg-light-black
