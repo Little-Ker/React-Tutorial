@@ -11,6 +11,7 @@ import Clsx from '../basicKit/Clsx'
 import Prop from '../component/Prop'
 import PropTypes from '../component/PropTypes'
 import Hook from '../hooks/Hook'
+import UseState from '../hooks/UseState'
 
 const RouterPage = () => {
   return (
@@ -23,6 +24,7 @@ const RouterPage = () => {
       <Route exact path="/prop" element={<Prop/>} />
       <Route exact path="/prop-types" element={<PropTypes/>} />
       <Route exact path="/hook" element={<Hook/>} />
+      <Route exact path="/useState" element={<UseState/>} />
       <Route path="*" element={<Artical/>} />
     </Routes>
   )

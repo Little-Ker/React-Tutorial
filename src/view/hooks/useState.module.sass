@@ -1,0 +1,32 @@
+@use '../../style/variable' as variable
+    
+.useStateEx
+    display: flex
+    flex-direction: column
+    align-items: center
+    h1
+        margin: 20px 0
+    .countBtn
+        cursor: pointer
+        padding: 7px 20px
+        border: 1px solid variable.$white
+        transition: .3s all
+        &:hover
+            background-color: variable.$white
+            color: variable.$bg-light-black
+.useStateEx02
+    h1
+        text-align: center
+        margin: 20px 0
+    input
+        padding: 5px 10px
+        width: 220px
+.useStateEx03
+    h1
+        text-align: center
+        margin-bottom: 20px
+    .list
+        +variable.set-flex(center, center)
+        .btn
+            padding: 10px 20px
+            margin: 0 10px
