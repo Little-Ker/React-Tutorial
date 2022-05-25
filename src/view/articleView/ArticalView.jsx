@@ -10,6 +10,7 @@ import Eslint from '../basicKit/Eslint'
 import Clsx from '../basicKit/Clsx'
 import Prop from '../component/Prop'
 import PropTypes from '../component/PropTypes'
+import Hook from '../hooks/Hook'
 
 const RouterPage = () => {
   return (
@@ -21,6 +22,7 @@ const RouterPage = () => {
       <Route exact path="/clsx" element={<Clsx/>} />
       <Route exact path="/prop" element={<Prop/>} />
       <Route exact path="/prop-types" element={<PropTypes/>} />
+      <Route exact path="/hook" element={<Hook/>} />
       <Route path="*" element={<Artical/>} />
     </Routes>
   )
