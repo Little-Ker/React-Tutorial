@@ -34,30 +34,30 @@ const navList2 = [{
         txt: 'useEffect', to: 'useEffect'
     },{
         txt: 'useCallback', to: 'useCallback'
+    },{
+        txt: 'useRef', to: 'useRef'
     }]
 },{
     title: 'router',
     content: [{
-        txt: '安裝指令', to: 'router-install'
+        txt: '安裝 router', to: 'router'
     },{
-        txt: '環境調整', to: 'router-environment'
+        txt: '巢狀路由', to: 'routerNested'
     },{
-        txt: 'HashRouter', to: 'hashRouter'
+        txt: 'Router Hook', to: 'router-hook/123'
+    },{
+        txt: 'Router Mode', to: 'routerMode'
     }]
 },{
     title: 'redux',
     content: [{
-        txt: '安裝指令', to: 'redux-install'
+        txt: '安裝 redux', to: 'redux-install'
     },{
-        txt: '環境調整', to: 'redux-environment'
+        txt: '取得 / 改變 資料', to: 'redux-state'
     },{
-        txt: '取得資料', to: 'redux-getData'
+        txt: '延遲改資料事件', to: 'redux-asyncState'
     },{
-        txt: '改變資料事件', to: 'redux-changeData'
-    },{
-        txt: '延遲改資料事件', to: 'redux-asyncChangeData'
-    },{
-        txt: '使用 Axios 取得資料', to: 'redux-axiosGetData'
+        txt: '使用 Axios 取得資料', to: 'redux-axios'
     }]
 },{
     title: '部屬 git pages',
