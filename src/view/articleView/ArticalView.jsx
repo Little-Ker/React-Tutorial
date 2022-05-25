@@ -20,6 +20,7 @@ import RouterNested from '../router/RouterNested'
 import NestedChildA from '../router/nested/NestedChildA'
 import NestedChildB from '../router/nested/NestedChildB'
 import RouterHook from '../router/RouterHook'
+import RouterMode from '../router/RouterMode'
 
 const RouterPage = () => {
   return (
@@ -43,6 +44,8 @@ const RouterPage = () => {
           <Route path="B" element={<NestedChildB />} />
       </Route>
       <Route exact path="/router-hook/:id/*" element={<RouterHook/>}></Route>
+      <Route exact path="/routerMode" element={<RouterMode/>} />
+      <Route path="*" element={<Artical/>} />
     </Routes>
   )
 }
