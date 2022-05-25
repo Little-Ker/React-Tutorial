@@ -24,6 +24,7 @@ import RouterMode from '../router/RouterMode'
 import InstallRedux from '../redux/InstallRedux'
 import ReduxState from '../redux/ReduxState'
 import ReduxAsyncState from '../redux/ReduxAsyncState'
+import ReduxAxios from '../redux/ReduxAxios'
 
 const RouterPage = () => {
   return (
@@ -51,6 +52,7 @@ const RouterPage = () => {
       <Route exact path="/redux-install" element={<InstallRedux/>} />
       <Route exact path="/redux-state" element={<ReduxState/>} />
       <Route exact path="/redux-asyncState" element={<ReduxAsyncState/>} />
+      <Route exact path="/redux-axios" element={<ReduxAxios/>} />
       <Route path="*" element={<Artical/>} />
     </Routes>
   )
