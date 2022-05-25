@@ -1,0 +1,32 @@
+@use '../../style/variable' as variable
+    
+.useCallbackEx
+    flex-direction: column
+    +variable.set-flex(center, center)
+    .inputNum
+        margin: 30px 0 20px 0
+        +variable.set-flex(center, center)
+        input
+            margin-left: 10px
+            width: 100px
+            padding-left: 10px
+    .countBtn
+        cursor: pointer
+        padding: 7px 0
+        text-align: center
+        width: 280px
+        border: 1px solid variable.$white
+        transition: .3s all
+        &:hover
+            background-color: variable.$white
+            color: variable.$bg-light-black
+.useCallbackEx02
+    width: 100%
+    height: 240px
+    +variable.set-flex(center, center)
+    flex-direction: column
+    .btn
+        padding: 10px 20px
+        border: 1px solid #ccc
+        margin: 20px 5px
+        cursor: pointer
