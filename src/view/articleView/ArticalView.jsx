@@ -21,6 +21,7 @@ import NestedChildA from '../router/nested/NestedChildA'
 import NestedChildB from '../router/nested/NestedChildB'
 import RouterHook from '../router/RouterHook'
 import RouterMode from '../router/RouterMode'
+import InstallRedux from '../redux/InstallRedux'
 
 const RouterPage = () => {
   return (
@@ -45,6 +46,7 @@ const RouterPage = () => {
       </Route>
       <Route exact path="/router-hook/:id/*" element={<RouterHook/>}></Route>
       <Route exact path="/routerMode" element={<RouterMode/>} />
+      <Route exact path="/redux-install" element={<InstallRedux/>} />
       <Route path="*" element={<Artical/>} />
     </Routes>
   )
