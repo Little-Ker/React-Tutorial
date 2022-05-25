@@ -8,6 +8,7 @@ import Install from '../CRA/Install'
 import Sass from '../basicKit/Sass'
 import Eslint from '../basicKit/Eslint'
 import Clsx from '../basicKit/Clsx'
+import Prop from '../component/Prop'
 
 const RouterPage = () => {
   return (
@@ -17,6 +18,7 @@ const RouterPage = () => {
       <Route exact path="/sass" element={<Sass/>} />
       <Route exact path="/eslint" element={<Eslint/>} />
       <Route exact path="/clsx" element={<Clsx/>} />
+      <Route exact path="/prop" element={<Prop/>} />
       <Route path="*" element={<Artical/>} />
     </Routes>
   )
