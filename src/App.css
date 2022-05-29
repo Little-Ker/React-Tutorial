@@ -40,3 +40,13 @@
     transform: rotate(360deg);
   }
 }
+
+/* 客製化滾動條 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: rgb(119, 115, 115);
+} 
