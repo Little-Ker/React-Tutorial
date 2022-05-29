@@ -26,6 +26,7 @@ import ReduxState from '../redux/ReduxState'
 import ReduxAsyncState from '../redux/ReduxAsyncState'
 import ReduxAxios from '../redux/ReduxAxios'
 import GitPages from '../gitPages/GitPages'
+import GitPagesBug from '../gitPages/GitPagesBug'
 
 const RouterPage = () => {
   return (
@@ -55,6 +56,7 @@ const RouterPage = () => {
       <Route exact path="/redux-asyncState" element={<ReduxAsyncState/>} />
       <Route exact path="/redux-axios" element={<ReduxAxios/>} />
       <Route exact path="/gitPages" element={<GitPages/>} />
+      <Route exact path="/gitPagesBug" element={<GitPagesBug/>} />
       <Route path="*" element={<Artical/>} />
     </Routes>
   )
