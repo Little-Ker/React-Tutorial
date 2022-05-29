@@ -28,7 +28,7 @@ function ChooseMenu() {
 }
 
 function UseCallbackEx() {
-    const [inputAmount, setInputAmount] = useState('2');
+    const [inputAmount, setInputAmount] = useState('2')
     const [count, setCount] = useState(0)
 
     const changeCount = useCallback((num) => {

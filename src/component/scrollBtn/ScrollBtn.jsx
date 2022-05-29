@@ -2,8 +2,8 @@ import React, { useState, useCallback, useEffect } from 'react'
 import styles from './scrollBtn.module.sass'
 import clsx from 'clsx'
 
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
 
 function ScrollBtn() {
     const [y, setY] = useState(window.scrollY)
@@ -46,11 +46,11 @@ function ScrollBtn() {
     )
 
     useEffect(() => {
-        setY(window.scrollY);
-        window.addEventListener("scroll", handleNavigation);
+        setY(window.scrollY)
+        window.addEventListener("scroll", handleNavigation)
 
         return () => {
-            window.removeEventListener("scroll", handleNavigation);
+            window.removeEventListener("scroll", handleNavigation)
         }
     }, [handleNavigation])
 

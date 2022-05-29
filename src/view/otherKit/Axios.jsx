@@ -33,7 +33,7 @@ function AxiosEx() {
 
     useEffect(() => {
         axios.get(`${process.env.REACT_APP_BASE_URL}/data/dataList.json`).then((response) => {
-            setData(response.data.titleData);
+            setData(response.data.titleData)
         })
     }, [])
 
