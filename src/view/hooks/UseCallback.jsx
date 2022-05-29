@@ -15,10 +15,10 @@ import Npm from '../../component/npm/Npm'
 function ChooseMenu() {
     const menuList = {
         prev: {
-            title: 'useState', to: '/useState'
+            title: 'useEffect', to: '/useEffect'
         },
         next: {
-            title: 'useCallback', to: '/useCallback'
+            title: 'useRef', to: '/useRef'
         }
     }
 

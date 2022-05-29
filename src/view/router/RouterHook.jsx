@@ -23,7 +23,7 @@ function ChooseMenu() {
             title: '巢狀路由', to: '/routerNested'
         },
         next: {
-            title: 'HashRouter', to: '/hashRouter'
+            title: 'Router Mode', to: '/routerMode'
         }
     }
 

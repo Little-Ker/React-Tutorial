@@ -18,7 +18,7 @@ function ChooseMenu() {
             title: '安裝 router', to: '/router'
         },
         next: {
-            title: 'Router Hook', to: '/router-hook'
+            title: 'Router Hook', to: '/router-hook/123'
         }
     }
 

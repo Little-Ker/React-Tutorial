@@ -23,7 +23,7 @@ function ChooseMenu() {
     )
 }
 
-function Prop() {
+function Hook() {
     return (
         <div>
             <Title txt="Hook 介紹" />
@@ -51,4 +51,4 @@ function Prop() {
     )
 }
 
-export default Prop
+export default Hook
