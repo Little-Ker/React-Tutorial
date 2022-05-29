@@ -1,5 +1,6 @@
 import styles from './navbar.module.sass'
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import { useLocation  } from "react-router-dom"
 import { Link } from "react-router-dom"
 import { useSelector } from "react-redux"
 import clsx from 'clsx'
@@ -7,17 +8,21 @@ import clsx from 'clsx'
 function Navbar() {
     const navList = useSelector((state) => state.navList).navList
     const [titleIndex, setTitleIndex] = useState(0)
-    const [chooseTitleIndex, setChooseTitleIndex] = useState(0)
-    const [chooseSubTitleIndex, setChooseSubTitleIndex] = useState(0)
-
-    function clickSubTitle(titleIndex, subIndex) {
-        setChooseTitleIndex(titleIndex)
-        setChooseSubTitleIndex(subIndex)
-    }
 
     const moveTop = () => {
         window.scrollTo(0, 0)
     }
+
+    const location = useLocation().pathname.split('/')[1]
+
+    useEffect(() => {
+        navList.forEach((title, titleIndex) => {
+            title.content.forEach((item) => {
+                const to = item.to.split('/')[0]
+                if (to === location) setTitleIndex(titleIndex)
+            })
+        })
+    }, [location])
 
     return (
         <div className={styles.navbar}>
@@ -33,8 +38,8 @@ function Navbar() {
                         <div className={clsx(styles.subNav, index === titleIndex && styles.activeShow)}>
                             {item.content.map((item2, index2) => (
                                 <Link key={index2}
-                                className={clsx(styles.subTitle, chooseTitleIndex === index && chooseSubTitleIndex === index2 && styles.clickSubTitle)}
-                                onClick={() => {moveTop();clickSubTitle(index, index2)}}
+                                className={clsx(styles.subTitle, location === item2.to.split('/')[0] && styles.clickSubTitle)}
+                                onClick={() => {moveTop()}}
                                 to={item2.to}
                                 >{item2.txt}</Link>
                             ))}
