@@ -28,6 +28,7 @@ import ReduxAxios from '../redux/ReduxAxios'
 import GitPages from '../gitPages/GitPages'
 import GitPagesBug from '../gitPages/GitPagesBug'
 import Axios from '../otherKit/Axios'
+import Mock from '../otherKit/Mock'
 
 const RouterPage = () => {
   return (
@@ -59,6 +60,7 @@ const RouterPage = () => {
       <Route exact path="/gitPages" element={<GitPages/>} />
       <Route exact path="/gitPagesBug" element={<GitPagesBug/>} />
       <Route exact path="/axios" element={<Axios/>} />
+      <Route exact path="/mock" element={<Mock/>} />
       <Route path="*" element={<Artical/>} />
     </Routes>
   )
