@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/React-Tutorial/static/css/main.354af1f7.css",
+    "main.js": "/React-Tutorial/static/js/main.4973f8e5.js",
+    "static/js/787.28cb0dcd.chunk.js": "/React-Tutorial/static/js/787.28cb0dcd.chunk.js",
+    "static/media/08.gif": "/React-Tutorial/static/media/08.2f93e78b293dcb3d4639.gif",
+    "static/media/KouzanBrushFontSousyo.ttf": "/React-Tutorial/static/media/KouzanBrushFontSousyo.8ef0df3ba42c88aa3eaa.ttf",
+    "static/media/07.gif": "/React-Tutorial/static/media/07.49fa8c3968371d9ef6f2.gif",
+    "static/media/15.jpg": "/React-Tutorial/static/media/15.b4fe4938a43a3736f45d.jpg",
+    "static/media/10.jpg": "/React-Tutorial/static/media/10.e65c874e6564053020e0.jpg",
+    "static/media/11.jpg": "/React-Tutorial/static/media/11.cc6861220283989b7903.jpg",
+    "static/media/02.jpg": "/React-Tutorial/static/media/02.af0ee5b3673d9f78a337.jpg",
+    "static/media/12.jpg": "/React-Tutorial/static/media/12.baf7d5c8d3c5a4cf25f5.jpg",
+    "static/media/03.jpg": "/React-Tutorial/static/media/03.166209930b99732b9231.jpg",
+    "static/media/14.jpg": "/React-Tutorial/static/media/14.d6377c0d1086cfce7d5e.jpg",
+    "static/media/09.jpg": "/React-Tutorial/static/media/09.1adeeb39da13793a1ee2.jpg",
+    "index.html": "/React-Tutorial/index.html",
+    "main.354af1f7.css.map": "/React-Tutorial/static/css/main.354af1f7.css.map",
+    "main.4973f8e5.js.map": "/React-Tutorial/static/js/main.4973f8e5.js.map",
+    "787.28cb0dcd.chunk.js.map": "/React-Tutorial/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.354af1f7.css",
+    "static/js/main.4973f8e5.js"
+  ]
+}
