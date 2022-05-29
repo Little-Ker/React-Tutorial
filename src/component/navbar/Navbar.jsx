@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import clsx from 'clsx'
 
-const navList2 = [{
+const navList = [{
     title: 'CRA',
     content: [{
         txt: '安裝 React', to: 'install'
@@ -77,7 +77,7 @@ const navList2 = [{
     },{
         txt: 'Swiper', to: 'swiper'
     },{
-        txt: 'Google Font',  to: 'googleFont'
+        txt: '外部文字嵌入',  to: 'font'
     }]
 }]
 
@@ -103,7 +103,7 @@ function Navbar() {
             </div>
             <div className={styles.linkList}>
             {
-                navList2.map((item, index) => (
+                navList.map((item, index) => (
                     <div key={index} className={styles.link}>
                         <p onClick={() => setTitleIndex(index)} className={clsx(styles.title, index === titleIndex && styles.activeTitleShow)}>{item.title}</p>
                         <div className={clsx(styles.subNav, index === titleIndex && styles.activeShow)}>
