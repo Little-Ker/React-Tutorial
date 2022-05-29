@@ -32,7 +32,7 @@ function AxiosEx() {
     const [data, setData] = React.useState([])
 
     useEffect(() => {
-        axios.get('/data/dataList.json').then((response) => {
+        axios.get(`${process.env.REACT_APP_BASE_URL}/data/dataList.json`).then((response) => {
             setData(response.data.titleData);
         })
     }, [])
