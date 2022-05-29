@@ -1,0 +1,26 @@
+@use '../../style/variable' as variable
+
+.scrollBtn
+    position: fixed
+    right: 0
+    bottom: 0
+    .btn
+        position: absolute
+        right: 20px
+        bottom: 20px
+        background-color: #ffffffc5
+        width: 50px
+        height: 50px
+        border-radius: 10px
+        cursor: pointer
+        transition: .3s all
+        opacity: 0
+        visibility: hidden
+        +variable.set-flex(center, center)
+        &:hover
+            background-color: #fff
+        .arrSize
+            font-size: 28px 
+    .showBtn
+        opacity: 1
+        visibility: visible

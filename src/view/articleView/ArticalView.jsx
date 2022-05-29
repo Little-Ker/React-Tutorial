@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import styles from './articalView.module.sass'
 
 import Navbar from '../../component/navbar/Navbar'
+import ScrollBtn from '../../component/scrollBtn/ScrollBtn'
 import Artical from '../artical/Artical'
 import Install from '../CRA/Install'
 import Sass from '../basicKit/Sass'
@@ -76,6 +77,7 @@ function ArticalView() {
   return (
     <Router>
       <Navbar />
+      <ScrollBtn />
       <div className={styles.articalView}>
         <div className='container1200'>
             <RouterPage />
