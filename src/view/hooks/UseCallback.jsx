@@ -61,7 +61,7 @@ function UseCallbackEx02() {
     return (
         <div className={styles.useCallbackEx02} style={backgroundStyle()}>
             <h1>useCallback</h1>
-            <button className={styles.btn} onClick={() => setDark(!dark)}>Change Background</button>
+            <div className={styles.btn} onClick={() => setDark(!dark)}>Change Background</div>
         </div>
     )
 }
