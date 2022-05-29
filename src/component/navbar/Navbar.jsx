@@ -13,7 +13,8 @@ function Navbar() {
         window.scrollTo(0, 0)
     }
 
-    const location = useLocation().pathname.split('/')[1]
+    let location = useLocation().pathname.split('/')[1]
+    if(location === '' || location === 'React-Personal-Website') location = 'install'
 
     useEffect(() => {
         navList.forEach((title, titleIndex) => {

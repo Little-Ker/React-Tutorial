@@ -4,7 +4,7 @@ import styles from './articalView.module.sass'
 
 import Navbar from '../../component/navbar/Navbar'
 import ScrollBtn from '../../component/scrollBtn/ScrollBtn'
-import Artical from '../artical/Artical'
+// import Artical from '../artical/Artical'
 import Install from '../CRA/Install'
 import Sass from '../basicKit/Sass'
 import Eslint from '../basicKit/Eslint'
@@ -37,7 +37,7 @@ import FontStyles from '../otherKit/FontStyles'
 const RouterPage = () => {
   return (
     <Routes>
-      <Route exact path="/" element={<Artical/>} />
+      <Route exact path="/" element={<Install/>} />
       <Route exact path="/install" element={<Install/>} />
       <Route exact path="/sass" element={<Sass/>} />
       <Route exact path="/eslint" element={<Eslint/>} />
@@ -68,7 +68,7 @@ const RouterPage = () => {
       <Route exact path="/materialUI" element={<MaterialUI/>} />
       <Route exact path="/swiper" element={<Swiper/>} />
       <Route exact path="/font" element={<FontStyles/>} />
-      <Route path="*" element={<Artical/>} />
+      <Route path="*" element={<Install/>} />
     </Routes>
   )
 }
