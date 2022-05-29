@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Margarine&family=Poppins:wght@200&family=Roboto+Slab&display=swap');
 
 body {
   margin: 0;
@@ -12,4 +13,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: 'f01';
+  src: url('/src/assets/font/KouzanBrushFontSousyo.ttf');
 }

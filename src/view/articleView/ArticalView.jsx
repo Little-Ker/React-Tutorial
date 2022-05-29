@@ -31,6 +31,7 @@ import Axios from '../otherKit/Axios'
 import Mock from '../otherKit/Mock'
 import MaterialUI from '../otherKit/MaterialUI'
 import Swiper from '../otherKit/Swiper'
+import FontStyles from '../otherKit/FontStyles'
 
 const RouterPage = () => {
   return (
@@ -65,6 +66,7 @@ const RouterPage = () => {
       <Route exact path="/mock" element={<Mock/>} />
       <Route exact path="/materialUI" element={<MaterialUI/>} />
       <Route exact path="/swiper" element={<Swiper/>} />
+      <Route exact path="/font" element={<FontStyles/>} />
       <Route path="*" element={<Artical/>} />
     </Routes>
   )
