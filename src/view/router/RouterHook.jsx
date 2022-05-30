@@ -80,6 +80,7 @@ function RouterHookEx03() {
     )
 }
 
+// eslint-disable-next-line react/prop-types
 function Child({ name }) {
     return (
       <div>

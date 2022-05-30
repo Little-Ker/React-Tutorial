@@ -1,5 +1,5 @@
 import React from "react"
-import Button from '@mui/material/Button';
+import Button from '@mui/material/Button'
 
 const style = {
     border: 1,
@@ -9,5 +9,5 @@ const style = {
 }
 
 export default function App() {
-    return <Button sx={style}>Example</Button>;
+    return <Button sx={style}>Example</Button>
 }

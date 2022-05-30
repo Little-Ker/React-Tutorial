@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit"
 export const todoSlice = createSlice({
   name: "todoAsync",
   initialState: {
@@ -20,7 +20,7 @@ export const todoSlice = createSlice({
 
 export const todoAsync = todo => dispatch => {
     setTimeout(() => {
-        console.log('async:', todo);
+        console.log('async:', todo)
         dispatch(addTodo(todo))
     }, 1000)
 }

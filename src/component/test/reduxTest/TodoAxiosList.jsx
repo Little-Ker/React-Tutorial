@@ -16,7 +16,7 @@ const TodoAxiosList = () => {
                 <li key={index}>{val.title} : {val.txt}</li>
             ))}
         </ul>
-    );
-};
+    )
+}
  
 export default TodoAxiosList

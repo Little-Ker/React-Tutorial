@@ -15,6 +15,7 @@ import Hook from '../hooks/Hook'
 import UseState from '../hooks/UseState'
 import UseEffect from '../hooks/UseEffect'
 import UseCallback from '../hooks/UseCallback'
+import UseContext from '../hooks/UseContext'
 import UseRef from '../hooks/UseRef'
 import InstallRouter from '../router/InstallRouter'
 import RouterNested from '../router/RouterNested'
@@ -48,6 +49,7 @@ const RouterPage = () => {
       <Route exact path="/useState" element={<UseState/>} />
       <Route exact path="/useEffect" element={<UseEffect/>} />
       <Route exact path="/useCallback" element={<UseCallback/>} />
+      <Route exact path="/useContext" element={<UseContext/>} />
       <Route exact path="/useRef" element={<UseRef/>} />
       <Route exact path="/router" element={<InstallRouter/>} />
       <Route exact path="/routerNested/*" element={<RouterNested/>}>

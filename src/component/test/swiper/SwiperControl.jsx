@@ -11,13 +11,13 @@ import "swiper/css/navigation"
 const SwiperControl = () => {
   const swiperAry = [1, 2, 3, 4, 5]
 
-  const swiper1Ref = useRef();
-  const swiper2Ref = useRef();
+  const swiper1Ref = useRef()
+  const swiper2Ref = useRef()
 
   useLayoutEffect(() => {
-    swiper1Ref.current.controller.control = swiper2Ref.current;
-    swiper2Ref.current.controller.control = swiper1Ref.current;
-  }, []);
+    swiper1Ref.current.controller.control = swiper2Ref.current
+    swiper2Ref.current.controller.control = swiper1Ref.current
+  }, [])
 
   return (
     <div className={styles.swiperTest}>
@@ -25,7 +25,7 @@ const SwiperControl = () => {
         navigation={true}
         modules={[Navigation, Controller]}
         onSwiper={(swiper) => {
-            swiper1Ref.current = swiper;
+            swiper1Ref.current = swiper
         }}
         className={`${styles.swiper} ${styles.swiper2}`}
       >
@@ -38,7 +38,7 @@ const SwiperControl = () => {
         navigation={true}
         modules={[Navigation, Controller]}
         onSwiper={(swiper) => {
-            swiper2Ref.current = swiper;
+            swiper2Ref.current = swiper
         }}
         className={`${styles.swiper} ${styles.swiper3}`}
       >

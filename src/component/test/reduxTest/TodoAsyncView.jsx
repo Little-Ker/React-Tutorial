@@ -1,3 +1,4 @@
+import React from "react"
 import styles from './todoListView.module.sass'
 
 import TodoAsyncList from "../../test/reduxTest/TodoAsyncList"

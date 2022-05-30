@@ -15,7 +15,7 @@ const Root = styled('div')(({ theme }) => ({
   [theme.breakpoints.up('lg')]: {
     backgroundColor: green[500],
   },
-}));
+}))
 
 export default function MediaQuery() {
   return (
@@ -24,5 +24,5 @@ export default function MediaQuery() {
       <Typography>up(md): blue</Typography>
       <Typography>up(lg): green</Typography>
     </Root>
-  );
+  )
 }
