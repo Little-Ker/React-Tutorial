@@ -10,6 +10,7 @@ import Sass from '../basicKit/Sass'
 import Eslint from '../basicKit/Eslint'
 import Clsx from '../basicKit/Clsx'
 import Prop from '../component/Prop'
+import Prop2 from '../component/Prop2'
 import PropTypes from '../component/PropTypes'
 import Hook from '../hooks/Hook'
 import UseState from '../hooks/UseState'
@@ -44,6 +45,7 @@ const RouterPage = () => {
       <Route exact path="/eslint" element={<Eslint/>} />
       <Route exact path="/clsx" element={<Clsx/>} />
       <Route exact path="/prop" element={<Prop/>} />
+      <Route exact path="/prop2" element={<Prop2/>} />
       <Route exact path="/prop-types" element={<PropTypes/>} />
       <Route exact path="/hook" element={<Hook/>} />
       <Route exact path="/useState" element={<UseState/>} />

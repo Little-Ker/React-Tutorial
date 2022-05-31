@@ -21,6 +21,8 @@ export const navListSlice = createSlice({
         content: [{
             txt: 'Component 與 prop', to: 'prop'
         },{
+            txt: '屬性展開 {...prop}', to: 'prop2'
+        },{
             txt: 'prop-types', to: 'prop-types'
         }]
     },{

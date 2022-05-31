@@ -15,7 +15,7 @@ import Hyperlink from '../../component/hyperlink/Hyperlink'
 function ChooseMenu() {
     const menuList = {
         prev: {
-            title: 'Component 與 Prop', to: '/prop'
+            title: '屬性展開 {...props}', to: '/prop2'
         },
         next: {
             title: 'Hook 介紹', to: '/hook'

@@ -18,7 +18,7 @@ function ChooseMenu() {
             title: 'clsx', to: '/clsx'
         },
         next: {
-            title: 'prop-types', to: '/prop-types'
+            title: '屬性展開 {...props}', to: '/prop2'
         }
     }
 
