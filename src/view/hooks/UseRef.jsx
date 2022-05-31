@@ -14,7 +14,7 @@ import CodeResult from '../../component/codeResult/CodeResult'
 function ChooseMenu() {
     const menuList = {
         prev: {
-            title: 'useCallback', to: '/useCallback'
+            title: 'useContext', to: '/useContext'
         },
         next: {
             title: '安裝 router', to: '/router'

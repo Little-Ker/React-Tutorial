@@ -34,6 +34,8 @@ export const navListSlice = createSlice({
         },{
             txt: 'useCallback', to: 'useCallback'
         },{
+            txt: 'useContext', to: 'useContext'
+        },{
             txt: 'useRef', to: 'useRef'
         }]
     },{
