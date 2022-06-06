@@ -10,6 +10,7 @@
     .btn
         cursor: pointer
         padding: 10px 10px
+        width: 50%
         .arrow
             position: relative
             margin-left: 30px
@@ -37,8 +38,26 @@
             .arrow
                 &::after, &::before
                     margin-left: -40px
+                    +variable.mobile
+                        margin-left: -10px
             .txt
                 color: variable.$green
+    +variable.mobile
+        flex-direction: column-reverse
+        margin-top: 70px
+        .btn
+            width: 100%
+            margin-bottom: 20px
+            .arrow
+                margin: 0
+                &::after, &::before
+                    margin: 0
+                    margin-top: 15px
+            .txt
+                margin: 0
+            p
+                text-align: right
+                margin-right: 0
     .rightBtn
         text-align: right
         .arrow
@@ -53,5 +72,21 @@
         &:hover .arrow
             &::after, &::before
                 margin-right: -40px
+                +variable.mobile
+                    margin-right: -10px
+        +variable.mobile
+            .btn
+                border-top: 1px dashed variable.$white
+            .arrow
+                margin: 0
+                &::after, &::before
+                    margin: 0
+                    margin-top: 15px
+            .txt
+                margin: 0
+            p
+                text-align: left
 .btnHide
     visibility: hidden
+    +variable.mobile
+        display: none

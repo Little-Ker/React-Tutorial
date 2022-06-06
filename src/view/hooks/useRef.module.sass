@@ -6,16 +6,28 @@
     .inputList
         margin: 40px 0 20px 0
         +variable.set-flex(center, center)
+        +variable.mobile
+            flex-direction: column
+            margin: 20px 0 20px 0
         input
             width: 120px
             padding: 3px 10px
+            background-color: #fff0
+            color: #fff
+            outline: none
+            border: 1px solid #fff
             &:first-child
                 margin: 0 15px 0 0
+                +variable.mobile
+                    margin: 0
     .chooseList
         +variable.set-flex(center, center)
         margin-bottom: 20px
         select
             padding: 3px 10px
+            background-color: #fff0
+            color: #fff
+            border: 1px solid #fff
     .btn
         cursor: pointer
         padding: 7px 0
@@ -29,5 +41,9 @@
 .useRefEx02
     input
         padding: 5px
+        background-color: #fff0
+        color: #fff
+        outline: none
+        border: 1px solid #fff
     .btn
         margin-top: 20px

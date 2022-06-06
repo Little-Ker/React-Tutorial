@@ -15,10 +15,13 @@
     .copyBtn, .copyOver
         position: absolute
         right: 50px
-        top: 15px
+        bottom: 15px
         font-size: 16px
         color: variable.$pink
         opacity: 0
+        +variable.mobile
+            font-size: 12px
+            right: 15px
     .copyOver
         color: variable.$green
         opacity: 1
@@ -26,3 +29,6 @@
         background-color: variable.$bg-light-black
         .copyBtn
             opacity: 1
+    +variable.mobile
+        padding: 15px 30px
+        font-size: 14px

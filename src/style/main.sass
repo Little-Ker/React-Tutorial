@@ -43,7 +43,7 @@
             border-radius: 5px
             background-color: variable.$blue
             position: absolute
-            right: -15px
+            right: 10px
             top: 10px
             transform: rotate(45deg)
             transition: .3s all
@@ -55,6 +55,7 @@
         font-weight: 700
         border-bottom: 1px solid variable.$blue
         margin: 0 7px
+        padding-right: 20px
         cursor: pointer
         font-family: "Quicksand", sans-serif
     &:hover
@@ -83,6 +84,8 @@
     max-width: 1200px
     margin: auto
     padding: 0 80px
+    +variable.desktop
+        padding: 0 60px
     +variable.mobile
         padding: 0 15px
 

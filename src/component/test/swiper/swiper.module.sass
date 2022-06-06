@@ -1,6 +1,10 @@
+@use '../../../style/variable' as variable
+    
 .swiperTest
     height: 350px
     width: 100%
+    +variable.mobile
+        height: 170px
     .swiper
         height: 100%
         width: 100%
@@ -26,6 +30,8 @@ button
     top: 42%
     width: 120px
     height: 50px
+    +variable.mobile
+       width: 60px 
 .swiperButtonNext
     right: 0
 .swiperSlide

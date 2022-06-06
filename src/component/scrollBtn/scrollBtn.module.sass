@@ -4,6 +4,7 @@
     position: fixed
     right: 0
     bottom: 0
+    z-index: 1
     .btn
         position: absolute
         right: 20px
@@ -16,6 +17,7 @@
         transition: .3s all
         opacity: 0
         visibility: hidden
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
         +variable.set-flex(center, center)
         &:hover
             background-color: #fff
