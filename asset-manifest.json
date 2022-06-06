@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Tutorial/static/css/main.41bf6c37.css",
-    "main.js": "/React-Tutorial/static/js/main.faa1f06f.js",
+    "main.css": "/React-Tutorial/static/css/main.835526fe.css",
+    "main.js": "/React-Tutorial/static/js/main.6e73ecac.js",
     "static/js/787.28cb0dcd.chunk.js": "/React-Tutorial/static/js/787.28cb0dcd.chunk.js",
     "static/media/08.gif": "/React-Tutorial/static/media/08.2f93e78b293dcb3d4639.gif",
     "static/media/KouzanBrushFontSousyo.ttf": "/React-Tutorial/static/media/KouzanBrushFontSousyo.8ef0df3ba42c88aa3eaa.ttf",
@@ -16,12 +16,12 @@
     "static/media/17.jpg": "/React-Tutorial/static/media/17.90ce491715bb24e632b8.jpg",
     "static/media/09.jpg": "/React-Tutorial/static/media/09.1adeeb39da13793a1ee2.jpg",
     "index.html": "/React-Tutorial/index.html",
-    "main.41bf6c37.css.map": "/React-Tutorial/static/css/main.41bf6c37.css.map",
-    "main.faa1f06f.js.map": "/React-Tutorial/static/js/main.faa1f06f.js.map",
+    "main.835526fe.css.map": "/React-Tutorial/static/css/main.835526fe.css.map",
+    "main.6e73ecac.js.map": "/React-Tutorial/static/js/main.6e73ecac.js.map",
     "787.28cb0dcd.chunk.js.map": "/React-Tutorial/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41bf6c37.css",
-    "static/js/main.faa1f06f.js"
+    "static/css/main.835526fe.css",
+    "static/js/main.6e73ecac.js"
   ]
 }
