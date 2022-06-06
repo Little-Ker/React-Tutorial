@@ -9,14 +9,71 @@
     color: #fff
     border-right: 1px dashed variable.$white
     font-family: 'Quicksand', sans-serif
+    z-index: 2
+    +variable.pad
+        width: 100%
+        height: 80px
+        transition: .6s all
+        overflow: hidden
+        border-right: 0
+    .navBtn
+        width: 25px
+        height: 80px
+        position: absolute
+        margin-left: 60px
+        visibility: hidden
+        +variable.set-flex(center, center)
+        .line
+            width: 100%
+            height: 3px
+            background-color: variable.$white
+            position: relative
+            transition: .3s all
+            &::before, &::after
+                content: ''
+                width: 100%
+                height: 3px
+                background-color: variable.$white
+                position: absolute
+                left: 0
+                top: -10px
+                border-radius: 10px
+                transition: .3s all
+            &::after
+                top: 10px
+        +variable.pad
+            visibility: visible
+        +variable.mobile
+            margin-left: 15px
+        &.active
+            .line
+                background-color: #ffffff00
+                &::before
+                    transform: rotate(45deg)
+                    top: 0
+                &::after
+                    transform: rotate(-45deg)
+                    top: 0
     .webTitle
         margin: 80px 0
         line-height: 1.8
         font-size: 18px
         letter-spacing: 1px
         color: variable.$blue
+        +variable.desktop
+            border-bottom: 1px dashed variable.$white
+            margin: 0
+            padding: 13px
+            p
+                line-height: 1.4
     .linkList
         padding: 20px 60px
+        +variable.desktop
+            padding: 20px 40px
+        +variable.pad
+            padding: 80px 60px
+        +variable.mobile
+            padding: 40px 20px
         .link
             margin-bottom: 15px
             text-align: left
@@ -41,6 +98,9 @@
                 &:hover
                     &::before, &::after
                         background-color: variable.$orange
+            +variable.pad
+                .title
+                    margin-right: 10px
             .activeTitleShow
                 &::before
                     transform: rotate(-45deg)
@@ -48,6 +108,7 @@
                 &::after
                     transform: rotate(45deg)
                     background-color: variable.$orange
+
             .subNav
                 padding: 0 15px
                 overflow: hidden
@@ -77,3 +138,5 @@
             .activeShow
                 max-height: 220px
                 padding: 7px 15px
+    &.active
+        height: 100%

@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit"
 export const navListSlice = createSlice({
   name: "navList",
   initialState: {
+    clickNavBool: false,
     navList: [{
         title: 'CRA',
         content: [{
@@ -84,7 +85,15 @@ export const navListSlice = createSlice({
         }]
     }]
   },
-  reducers: {}
+  reducers: {
+    changeClickState:(state, action) => {
+        state.clickNavBool = action.payload
+    },
+    initClickBool: (state) => {
+        state.clickNavBool = false
+    },
+  }
 })
 
+export const { changeClickState, initClickBool } = navListSlice.actions
 export default navListSlice.reducer
