@@ -74,6 +74,19 @@ function UseRefEx() {
     )
 }
 
+function UseRefEx02() {
+    const inputRef = useRef(null)
+
+    return (
+        <div className={styles.useRefEx02}>
+            <input type='text' ref={inputRef} />
+            <div className={`btn ${styles.btn}`} onClick={()=>{
+                inputRef.current.focus()
+            }}>Focus</div>
+        </div>
+    )
+}
+
 function UseRef() {
     return (
         <div>
@@ -96,6 +109,8 @@ function UseRef() {
                 <SubTitle txt="# useRef 範例" />
                 <Code codeUrl="394c5b4d7e1f047bf1ee97a242fe7440"/>
                 <CodeResult code={<UseRefEx />} />
+                <Code codeUrl="6b596f16a77b1affb5515a8604e4de34"/>
+                <CodeResult code={<UseRefEx02 />} />
             </div>
             <Block />
             <Divider />
