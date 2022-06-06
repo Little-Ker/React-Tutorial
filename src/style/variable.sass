@@ -14,6 +14,8 @@ $light-blue-color: #E8F1F4
 $brown-color: #968575
 
 // 裝置大小
+$desktop-size: 1060px
+$pad-size: 990px
 $mobile-size: 576px
 $s-mobile-size: 375px
 
@@ -21,6 +23,14 @@ $s-mobile-size: 375px
   display: flex
   justify-content: $horizontal
   align-items: $vertical
+
+= desktop
+  @media only screen and (max-width: $desktop-size)
+    @content
+
+= pad
+  @media only screen and (max-width: $pad-size)
+    @content
 
 = mobile
   @media only screen and (max-width: $mobile-size)
