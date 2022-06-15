@@ -20,7 +20,7 @@ import MaterialUIEx04 from '../../component/test/materialUITest/MediaQueryTest'
 function ChooseMenu() {
     const menuList = {
         prev: {
-            title: 'Mock.js', to: '/mock'
+            title: 'Zustand', to: '/zustand'
         },
         next: {
             title: 'Swiper', to: '/swiper'

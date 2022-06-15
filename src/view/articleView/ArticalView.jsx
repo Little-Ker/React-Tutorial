@@ -32,6 +32,7 @@ import GitPages from '../gitPages/GitPages'
 import GitPagesBug from '../gitPages/GitPagesBug'
 import Axios from '../otherKit/Axios'
 import Mock from '../otherKit/Mock'
+import Zustand from '../otherKit/Zustand'
 import MaterialUI from '../otherKit/MaterialUI'
 import Swiper from '../otherKit/Swiper'
 import FontStyles from '../otherKit/FontStyles'
@@ -69,6 +70,7 @@ const RouterPage = () => {
       <Route exact path="/gitPagesBug" element={<GitPagesBug/>} />
       <Route exact path="/axios" element={<Axios/>} />
       <Route exact path="/mock" element={<Mock/>} />
+      <Route exact path="/zustand" element={<Zustand/>} />
       <Route exact path="/materialUI" element={<MaterialUI/>} />
       <Route exact path="/swiper" element={<Swiper/>} />
       <Route exact path="/font" element={<FontStyles/>} />

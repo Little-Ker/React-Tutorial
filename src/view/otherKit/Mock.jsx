@@ -22,7 +22,7 @@ function ChooseMenu() {
             title: 'Axios', to: '/axios'
         },
         next: {
-            title: 'Material UI', to: '/materialUI'
+            title: 'Zustand', to: '/zustand'
         }
     }
 

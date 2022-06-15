@@ -77,6 +77,8 @@ export const navListSlice = createSlice({
         },{
             txt: 'Mock js', to: 'mock'
         },{
+            txt: 'Zustand', to: 'zustand'
+        },{
             txt: 'Material UI', to: 'materialUI'
         },{
             txt: 'Swiper', to: 'swiper'
