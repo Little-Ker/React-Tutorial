@@ -17,7 +17,7 @@ function ChooseMenu() {
             title: 'useContext', to: '/useContext'
         },
         next: {
-            title: '安裝 router', to: '/router'
+            title: 'useImperativeHandle', to: '/useImperativeHandle'
         }
     }
 

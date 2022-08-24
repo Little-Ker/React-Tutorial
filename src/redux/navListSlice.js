@@ -40,6 +40,8 @@ export const navListSlice = createSlice({
             txt: 'useContext', to: 'useContext'
         },{
             txt: 'useRef', to: 'useRef'
+        },{
+            txt: 'useImperativeHandle', to: 'useImperativeHandle'
         }]
     },{
         title: 'router',
