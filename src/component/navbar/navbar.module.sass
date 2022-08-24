@@ -112,7 +112,6 @@
             .subNav
                 padding: 0 15px
                 overflow: hidden
-                max-height: 0
                 transition: .4s all
                 line-height: 2
                 p
@@ -122,6 +121,7 @@
                     color: #fff
                     transition: .3s all
                     display: block
+                    margin: 5px 0
                     &:hover
                         color: variable.$green
                 .clickSubTitle
@@ -135,8 +135,7 @@
                         position: absolute
                         left: -12px
                         top: calc((100% - 20px) / 2)
-            .activeShow
-                max-height: 220px
-                padding: 7px 15px
+            .subFirstTitle
+                padding-top: 7px
     &.active
         height: 100%

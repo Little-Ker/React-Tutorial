@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 import { useSelector } from "react-redux"
 import { useDispatch } from 'react-redux'
 import { changeClickState, initClickBool } from '../../redux/navListSlice'
+import Collapse from '@mui/material/Collapse'
 import clsx from 'clsx'
 
 function Navbar() {
@@ -59,14 +60,16 @@ function Navbar() {
                 navList.map((item, index) => (
                     <div key={index} className={styles.link}>
                         <p onClick={() => setTitleIndex(index)} className={clsx(styles.title, index === titleIndex && styles.activeTitleShow)}>{item.title}</p>
-                        <div className={clsx(styles.subNav, index === titleIndex && styles.activeShow)}>
+                        <div className={styles.subNav}>
+                        <Collapse in={index === titleIndex}>
                             {item.content.map((item2, index2) => (
                                 <Link key={index2}
-                                className={clsx(styles.subTitle, location === item2.to.split('/')[0] && styles.clickSubTitle)}
+                                className={clsx(styles.subTitle, location === item2.to.split('/')[0] && styles.clickSubTitle, index2 === 0 && styles.subFirstTitle)}
                                 onClick={() => {moveTop(), dispatch(initClickBool())}}
                                 to={item2.to}
                                 >{item2.txt}</Link>
                             ))}
+                           </Collapse>  
                         </div>
                     </div>
                 ))
