@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useCallback } from "react"
 import styles from './materialUI.module.sass'
 
 import DotItem from '../../component/dotItem/DotItem'
@@ -56,6 +56,31 @@ function ZustandEx02() {
     )
 }
 
+function ZustandEx03() {
+    const { setMemberList, memberList } = useStore()
+
+    const getList = useCallback(() => {
+        setMemberList([{
+                id: 0, name: 'Vivi'
+            }, {
+                id: 1, name: '西西'
+            }])
+    }, [])
+    
+    
+
+    return (
+        <div>
+            <div>
+                {memberList?.map((item, index) => (
+                    <p style={{'textAlign': 'center'}} key={index}>{item.id} : {item.name}</p>
+                ))}
+            </div>
+            <div className={`btn ${styles.btn}`} style={{'marginTop': '20px'}} onClick={() => getList()}>取得資料</div>
+        </div>
+    )
+}
+
 function Mock() {
     return (
         <div>
@@ -69,12 +94,64 @@ function Mock() {
                 <Npm npmTxt="npm install zustand" />
             </div>
             <div>
-                <SubTitle txt="# Zustand 同步讀改資料" />
+                <SubTitle txt="# Zustand 同步讀改資料 - 方法 1" />
                 <DotItem txt={'新增 useStore.js 管理狀態。'} />
                 <Code codeUrl="7c59d0b11915d38df3fff88df51ea8b0"/>
                 <DotItem txt={'在其他 component 可直接取用 useStore.js 的參數和方法。'} />
                 <Code codeUrl="5fd2ab1d8bd9a2b9c76f80f02aa07049"/>
                 <CodeResult code={<ZustandEx />} />
+            </div>
+            <Block />
+            <div>
+                <SubTitle txt="# Zustand 同步讀改資料 - 方法 2" />
+                <DotItem txt={'新增 useStore.js 管理狀態。'} />
+                <pre className="line-numbers">
+                    <code className="language-javascript" data-prismjs-copy="複製" data-prismjs-copy-success="複製成功！">
+{`
+    import create from "zustand"
+    import axios from 'axios'
+                        
+    const useStore = create((set) => ({
+        // 在 component 改資料
+        setMemberList: (data) => {
+            set({ memberList: data })
+        }
+    }))
+                        
+    export default useStore
+`}
+                    </code>
+                </pre>
+                {/* <Code codeUrl="7c59d0b11915d38df3fff88df51ea8b0"/> */}
+                <DotItem txt={'在其他 component 可直接修改 useStore.js 的參數。'} />
+                {/* <Code codeUrl="5fd2ab1d8bd9a2b9c76f80f02aa07049"/> */}
+                <pre className="line-numbers">
+                    <code className="language-javascript" data-prismjs-copy="複製" data-prismjs-copy-success="複製成功！">
+{`
+    const { setMemberList, memberList } = useStore()
+
+    const getList = useCallback(() => {
+        setMemberList([{
+            id: 0, name: 'Vivi'
+            }, {
+            id: 1, name: '西西'
+        }])
+    }, [])
+          
+    return (
+        <div>
+            <div>
+                {memberList?.map((item, index) => (
+                    <p style={{'textAlign': 'center'}} key={index}>{item.id} : {item.name}</p>
+                ))}
+            </div>
+            <div className={styles.btn} style={{'marginTop': '20px'}} onClick={() => getList()}>取得資料</div>
+        </div>
+    )
+`}
+                    </code>
+                </pre>
+                <CodeResult code={<ZustandEx03 />} />
             </div>
             <Block />
             <Divider />

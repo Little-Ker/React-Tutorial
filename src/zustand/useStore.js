@@ -20,6 +20,10 @@ const useStore = create((set) => ({
         const response = await axi(api)
         set({ list: response })
     },
+    // 在 component 改資料
+    setMemberList: (data) => {
+        set({ memberList: data })
+    }
 }))
 
 export default useStore
